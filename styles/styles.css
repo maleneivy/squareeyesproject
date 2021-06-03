@@ -1,0 +1,80 @@
+header, footer {
+    background-color: #00A2BB;
+    font-family: "skolar-sans-latin";
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+
+}
+header nav{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+header li {
+    display: inline-block;
+}
+
+header img {
+    width: 10%;
+    padding: 10px;
+    display: inline-block;
+}
+
+header a, footer a {
+    text-decoration-line: none;
+    color: #05032c;
+    padding: 30px;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFF;
+    color: #FFF;
+}
+
+header li {
+    list-style-type: none;
+}
+
+body {
+    background-color: #05032C;
+    margin: 0;
+    min-height: 100vh;
+    
+}
+
+body h1,h2,p,nav {
+    color: #FFF;
+}
+
+h1 {
+    font-family: "skolar-latin";
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-family: "skolar-latin";
+    font-size: 36px;
+    font-weight: italic;
+}
+
+p {
+    font-family: "skolar-sans-latin";
+    font-size: 20px;
+}
+
+/*Homepage for everyone*/
+.welcome {
+    margin: 250px 0;
+}
+
+.welcome__banner {
+    background-color: #22214a;
+    padding: 20px 0;
+}
