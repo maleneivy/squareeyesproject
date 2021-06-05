@@ -6,7 +6,7 @@ header, footer {
     text-transform: uppercase;
 }
 
-header {
+header, footer {
     display: flex;
 
 }
@@ -15,9 +15,15 @@ header nav{
     margin-top: 10px;
 }
 
-header li {
+header li, footer li {
     display: inline-block;
 }
+
+footer {
+    margin-bottom: 0;
+    padding-left: 170px;
+}
+
 
 .logo {
     width: 8%;
@@ -68,13 +74,13 @@ body h1,h2,p,nav {
 h1 {
     font-family: "skolar-latin";
     font-size: 48px;
-    font-weight: bolder;
+    font-style:bolder;
 }
 
 h2 {
     font-family: "skolar-latin";
     font-size: 36px;
-    font-weight: italic;
+    font-style: italic;
 }
 
 p {
@@ -137,6 +143,14 @@ p {
     padding: 0 8px 0 8px;
 }
 
+.latest-movies a, .top-10-movies a {
+    font-family: "skolar-latin";
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+    color: #00A2BB;
+}
+
 .register-now__banner {
     background-color: rgba(34,33,74,0.8);
     padding: 5px 20px 50px 450px;
@@ -156,15 +170,28 @@ p {
     padding-bottom: 20px;
 }
 
-.weekly-producer, .weekly-movie {
-    display: grid;
-    grid-column: span;
-    margin:auto;
-    background-color: #22214a;
-    padding: 30px;
-    max-width: 400px;
+.weekly__content {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgba(34,33,74,0.8);
+    max-width: 1500px;
+    max-height: 500px;
+    margin: 100px auto 100px 220px;
+    }
+
+.weekly__content div{
+    margin: 10px;
+    flex:1;
 }
 
-.weekly-producer img, .weekly-movie img {
-    width: 100%;
+.img_weekly-producer {
+    padding-right: 100px;
+}
+
+.weekly__content img {
+    width: 300px;
+    max-height: 400px;
+    margin:10px;
+    float:right;
 }
