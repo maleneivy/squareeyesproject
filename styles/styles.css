@@ -12,23 +12,21 @@ header, footer {
 }
 header nav{
     margin-left: 30px;
-    margin-top: 10px;
 }
 
 header li, footer li {
     display: inline-block;
 }
 
-footer {
-    margin-bottom: 0;
-    padding-left: 170px;
+footer nav {
+    padding-left: 155px;
 }
 
 
 .logo {
-    width: 8%;
-    height:8%;
-    padding: 10px 10px 0 10px;
+    width: 100px;
+    height:70px;
+    padding: 30px 10px 0 30px;
 }
 
 header a, footer a {
@@ -75,6 +73,10 @@ h1 {
     font-family: "skolar-latin";
     font-size: 48px;
     font-style:bolder;
+}
+
+.h1-220px {
+    padding-left: 210px;
 }
 
 h2 {
@@ -139,11 +141,12 @@ p {
     padding-bottom: 20px;
 }
 
-.content__latest-movies h2, p, a {
+.content__latest-movies h1, h2, p, a {
     padding: 0 8px 0 8px;
 }
 
-.latest-movies a, .top-10-movies a {
+/*Here I should add a class of this a, f.ex class=small-links*/
+.latest-movies a, .top-10-movies a, .weekly__content a {
     font-family: "skolar-latin";
     font-style: italic;
     font-size: 20px;
@@ -151,9 +154,14 @@ p {
     color: #00A2BB;
 }
 
-.register-now__banner {
+.explore-now__banner {
     background-color: rgba(34,33,74,0.8);
-    padding: 5px 20px 50px 450px;
+    padding: 5px 0 5px 210px;
+    display: flex;
+}
+
+.explore-now__banner div {
+    flex:1;
 }
 
 .top-10-movies {
@@ -177,7 +185,7 @@ p {
     background-color: rgba(34,33,74,0.8);
     max-width: 1500px;
     max-height: 500px;
-    margin: 100px auto 100px 220px;
+    margin: 100px auto 100px 210px;
     }
 
 .weekly__content div{
