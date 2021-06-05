@@ -19,10 +19,10 @@ header li {
     display: inline-block;
 }
 
-header img {
-    width: 10%;
-    padding: 10px;
-    display: inline-block;
+.logo {
+    width: 8%;
+    height:8%;
+    padding: 10px 10px 0 10px;
 }
 
 header a, footer a {
@@ -37,14 +37,27 @@ header a:hover, footer a:hover {
     color: #FFF;
 }
 
+.current {
+    text-decoration:underline;
+    color: #FFF;
+}
+
 header li {
     list-style-type: none;
+    padding-top: 40px;
+}
+
+.search {
+    display: inline-block;
+    padding-left: 700px;
+
 }
 
 body {
-    background-color: #05032C;
+    background-color: #05032c;
     margin: 0;
     min-height: 100vh;
+    
     
 }
 
@@ -69,12 +82,89 @@ p {
     font-size: 20px;
 }
 
-/*Homepage for everyone*/
-.welcome {
-    margin: 250px 0;
+.cta {
+    background-color: #fea850;
+    text-decoration-color: #05032c;
+    border-width: 0;
+    border-radius: 5px;
+    font-family: "skolar-sans-latin";
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 3px 15px;
+    text-align: center;
+    min-width: 95px;
+
 }
 
+.search-bar {
+    border-radius: 9px;
+    height: 24px;
+}
+
+/*Homepage for everyone*/
 .welcome__banner {
+    margin: 220px 0 130px 0;
+    background-color: rgba(34,33,74,0.8);
+    padding: 5px 20px 50px 450px;
+}
+.cta_welcome_item1 {
+    margin-right: 40px;
+}
+
+
+.latest-movies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1500px;
+    margin: 50px auto;
+    grid-gap: 15px;
+}
+
+.latest-movies img, .content__top-10-movies img {
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.content__latest-movies {
+    background-color: rgba(34,33,74,0.8);
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+
+.content__latest-movies h2, p, a {
+    padding: 0 8px 0 8px;
+}
+
+.register-now__banner {
+    background-color: rgba(34,33,74,0.8);
+    padding: 5px 20px 50px 450px;
+}
+
+.top-10-movies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1500px;
+    margin: 50px auto;
+    grid-gap: 15px;
+}
+
+.content__top-10-movies {
+    background-color: rgba(34,33,74,0.8);
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+
+.weekly-producer, .weekly-movie {
+    display: grid;
+    grid-column: span;
+    margin:auto;
     background-color: #22214a;
-    padding: 20px 0;
+    padding: 30px;
+    max-width: 400px;
+}
+
+.weekly-producer img, .weekly-movie img {
+    width: 100%;
 }
