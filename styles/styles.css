@@ -91,16 +91,27 @@ p {
 
 .cta {
     background-color: #fea850;
-    text-decoration-color: #05032c;
+    color: #05032c;
     border-width: 0;
     border-radius: 5px;
     font-family: "skolar-sans-latin";
     font-size: 15px;
     text-transform: uppercase;
-    padding: 3px 15px;
+    padding: 3px 30px;
     text-align: center;
-    min-width: 95px;
+    text-decoration: none;
 
+}
+
+.cta-big {
+    min-width: 200px;
+    min-height: 40px;
+    font-size: 20px;
+}
+
+.cta:hover, .cta-big:hover{
+    color: #FFF;
+    text-decoration: underline;
 }
 
 .search-bar {
@@ -155,13 +166,18 @@ p {
 
 .explore-now__banner {
     background-color: rgba(34,33,74,0.8);
-    padding: 5px 0 5px 210px;
-    display: grid;
-    grid-template-rows: auto;
+    display: flex;
+    align-items: center;
 }
 
 .explore-now__banner div {
-   
+    flex:1 auto;
+    padding-left: 220px;
+}
+
+.explore-now__banner a {
+    flex:auto;
+    margin-right: 270px;;
 }
 
 .top-10-movies {
