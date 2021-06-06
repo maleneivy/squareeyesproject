@@ -22,7 +22,6 @@ footer nav {
     padding-left: 155px;
 }
 
-
 .logo {
     width: 100px;
     height:70px;
@@ -157,11 +156,12 @@ p {
 .explore-now__banner {
     background-color: rgba(34,33,74,0.8);
     padding: 5px 0 5px 210px;
-    display: flex;
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .explore-now__banner div {
-    flex:1;
+   
 }
 
 .top-10-movies {
