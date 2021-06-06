@@ -8,30 +8,30 @@ header, footer {
 
 header, footer {
     display: flex;
-
+    margin:auto;
 }
+
 header nav{
-    margin-left: 30px;
+    margin-left: 10px;
+}
+
+.search, .header-menus {
+    display: inline-flex;
 }
 
 header li, footer li {
     display: inline-block;
 }
 
-footer nav {
-    padding-left: 155px;
-}
-
 .logo {
-    width: 100px;
-    height:70px;
-    padding: 30px 10px 0 30px;
+    width: 150px;
+    margin-left: 10px;
 }
 
 header a, footer a {
     text-decoration-line: none;
     color: #05032c;
-    padding: 30px;
+    padding: 20px;
 }
 
 header a:hover, footer a:hover {
@@ -50,11 +50,6 @@ header li {
     padding-top: 40px;
 }
 
-.search {
-    display: inline-block;
-    padding-left: 700px;
-
-}
 
 body {
     background-color: #05032c;
@@ -76,6 +71,7 @@ h1 {
 
 .h1-220px {
     padding-left: 210px;
+    padding-top: 50px;
 }
 
 h2 {
@@ -121,12 +117,23 @@ p {
 
 /*Homepage for everyone*/
 .welcome__banner {
-    margin: 220px 0 130px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(34,33,74,0.8);
-    padding: 5px 20px 50px 450px;
+    margin: 150px 0 100px 0;
+    padding-bottom: 40px;
+    text-align: center;
+    
 }
-.cta_welcome_item1 {
-    margin-right: 40px;
+
+.welcome__banner a {
+    margin: 20px;
+}
+
+.welcome_buttons {
+    margin-top: 40px;
+    
 }
 
 
@@ -167,17 +174,10 @@ p {
 .explore-now__banner {
     background-color: rgba(34,33,74,0.8);
     display: flex;
+    flex-direction: row;
     align-items: center;
-}
-
-.explore-now__banner div {
-    flex:1 auto;
-    padding-left: 220px;
-}
-
-.explore-now__banner a {
-    flex:auto;
-    margin-right: 270px;;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .top-10-movies {
@@ -196,16 +196,12 @@ p {
 
 .weekly__content {
     display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     background-color: rgba(34,33,74,0.8);
     max-width: 1500px;
-    max-height: 500px;
-    margin: 100px auto 100px 210px;
+    margin:100px auto;
     }
 
 .weekly__content div{
-    margin: 10px;
     flex:1;
 }
 
@@ -215,7 +211,149 @@ p {
 
 .weekly__content img {
     width: 300px;
-    max-height: 400px;
     margin:10px;
     float:right;
+    flex-shrink:inherit;
+}
+
+/*media tablet styles*/
+@media only screen and (min-width:927px) and (max-width:1366px) {
+    h1{
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    .home-nav {
+        display:none;
+    }
+
+    .cta-big {
+        min-width: 100px;
+        min-height: 20px;
+        font-size: 15px;
+    }
+
+    .logo {
+        padding:0;
+    }
+
+
+    .latest-movies {
+        display: grid;
+        grid-template-columns: repeat(5, 0.5fr);
+        max-width: 1500px;
+        margin: 50px auto;
+        grid-gap: 15px;
+    }
+    
+    .latest-movies img, .content__top-10-movies img {
+        width:100%;
+        height:200px;
+    }
+
+    .content__latest-movies p, .content__top-10-movies p {
+        display: none;
+    }
+    
+    .img_weekly-producer {
+        padding: 10px 40px 0 0;
+    }
+    
+    .weekly__content img {
+        width: 50%;
+        margin:10px;
+        float:right;
+
+    }
+    .weekly__content p {
+        display: none;
+    }
+}
+
+/*media mobile styles*/
+@media only screen and (max-width:926px){
+    body{
+        background-image: none;
+        background-color: #05032c;
+    }
+
+    header a{
+        font-size: 15px;
+        padding-left: 0;
+    }
+
+    .search-bar{
+        width: 60% ;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    .home-nav {
+        display:none;
+    }
+
+    .cta-big {
+        min-width: 100px;
+        min-height: 20px;
+        font-size: 15px;
+    }
+
+    .logo {
+        padding:0;
+    }
+
+
+    .latest-movies {
+        display: grid;
+        grid-template-columns: repeat(5, 0.5fr);
+        max-width: 1500px;
+        margin: 50px auto;
+        grid-gap: 15px;
+    }
+    
+    .latest-movies img, .content__top-10-movies img {
+        width:100%;
+        height:200px;
+    }
+
+    .content__latest-movies p, .content__top-10-movies p {
+        display: none;
+    }
+
+    .explore-now__banner h1 {
+        font-size: 21px;
+    }
+
+    .explore-now__banner h2 {
+        font-size: 15px;
+    }
+
+    .cta-big {
+        min-width: 50px;
+        min-height: 10px;
+        font-size: 15px;
+    }
+    
+    .img_weekly-producer {
+        padding: 10px 40px 0 0;
+    }
+    
+    .weekly__content img {
+        width: 50%;
+        margin:10px;
+        float:right;
+
+    }
+    .weekly__content p {
+        display: none;
+    }
 }

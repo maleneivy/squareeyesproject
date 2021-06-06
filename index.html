@@ -21,30 +21,41 @@
 
 <body>
     <header>
-        <img src="icons/square-eyes-logo.png" alt="Square Eyes Brand Logo" class="logo">
+        <a href="index.html">
+            <img src="icons/square-eyes-logo.png" alt="Square Eyes Brand Logo" class="logo">
+        </a>
         <nav>
-            <ul>
-                <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <section class="search">
-                    <input class="search-bar" type="search" id="site-search" name="search"
-                        aria-label="Search through site content">
-                    <input type="submit" value="Search">
-                </section>
-            </ul>
+            <section class="header-menus">
+                <ul>
+                    <li><a href="index.html" class="current home-nav">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                </ul>
+            </section>
+            <section class="search">
+                <input class="search-bar" type="search" id="site-search" name="search"
+                    aria-label="Search through site content">
+                <input type="submit" value="GO!">
+            </section>
+
         </nav>
 
     </header>
 
     <main>
         <section class="welcome__banner">
-            <h1>Join, watch and explore the world<br>
-                through independent movies.</h1>
-            <p>The movie site for both moviemakers and watchers.</p>
-            <a href="log-in.html" class="cta cta_welcome_item1">log in</a>
-            <a href="sign-up.html" class="cta">sign up</a>
+            <div>
+                <h1>Join, watch and explore the world<br>
+                    through independent movies.</h1>
+                <p>The movie site for both moviemakers and watchers.</p>
+            </div>
+            <div class="welcome_buttons">
+                <a href="log-in.html" class="cta">log in</a>
+                <a href="sign-up.html" class="cta">sign up</a>
+
+            </div>
+
         </section>
         <section>
             <h1 class="h1-220px">Latest Movies</h1>
@@ -126,9 +137,9 @@
                     <h1>Explore movies</h1>
                     <h2>Browse through our big library and find the perfect movie for you.</h2>
                 </div>
-
-                <a href="movies.html" class="cta cta-big">browse movies</a>
-
+                <div>
+                    <a href="movies.html" class="cta cta-big">browse movies</a>
+                </div>
             </section>
 
             <section>
