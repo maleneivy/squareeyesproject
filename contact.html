@@ -5,10 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Watch independent movies from around the world" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/lhh4xyr.css">
+    <title>Contact Us - Square Eyes</title>
+
 </head>
 
 <body>
+    <header>
+        <a href="index.html">
+            <img src="icons/square-eyes-logo.png" alt="Square Eyes Brand Logo" class="logo">
+        </a>
+        <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <section class="header-menus">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="current home-nav">Contact</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                </ul>
+            </section>
+            <section class="search">
+                <input class="search-bar" type="search" id="site-search" name="search"
+                    aria-label="Search through site content">
+                <input type="submit" value="search">
+            </section>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="contact-us">
+            <div>
+                <h1>Contact us</h1>
+            </div>
+            <div>
+                <i class="far fa-window-close"></i>
+            </div>
+            <section class="section__contact-us-content">
+                <div class="type-of-contact">
+                    <h2>Type of contact</h2>
+                    <div>
+                        <input type="checkbox" name="film-producer" value="film-producer" id="film-producer"><label
+                            for="film-producer">Film Producer</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="film-watcher" value="film-watcher" id="film-watcher"><label
+                            for="film-watcher">Film Watcher</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="film-enthusiast" value="film-enthusiast"
+                            id="film-enthusiast"><label for="film-enthusiast">Film Enthusiast</label>
+                    </div>
+
+                </div>
+                <section class="get-in-touch__container">
+                    <div class="get-item1">
+                        <h2>Get in touch</h2>
+                    </div>
+                    <div class="get-item2">
+                        <label>First Name</label><input type="text" name="firstname">
+                    </div>
+                    <div class="get-item3">
+                        <label>Last Name</label><input type="text" name="lastname">
+                    </div>
+                    <div class="get-item4">
+                        <label>Company</label><input type="text" name="company">
+                    </div>
+                    <div class="get-item5">
+                        <label>E-mail</label><input type="text" name="email">
+                    </div>
+                    <div class="get-item6">
+                        <label>Message</label><textarea id="message" name="message" rows="10" cols="60"></textarea>
+                        <input type="submit" value="Send">
+                    </div>
+                </section>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <div>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="current home-nav">Contact</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 
 </body>
 
