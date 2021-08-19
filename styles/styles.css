@@ -145,6 +145,7 @@ p {
     max-width: 1500px;
     margin: 50px auto;
     grid-gap: 15px;
+    padding: 30px;
 }
 
 .latest-movies img, .content__top-10-movies img {
@@ -278,30 +279,26 @@ p {
     padding-right: 30px;
     }
 
+    .latest-movies, .top-10-movies {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px;
+        grid-gap: 10px;
+    }
+
+    .h1-220px {
+        grid-column: 1/4;
+    }
+
     .cta-big {
         min-width: 100px;
         min-height: 20px;
         font-size: 15px;
     }
 
-
-    .latest-movies {
-        display: grid;
-        grid-template-columns: repeat(5, 0.5fr);
-        max-width: 1500px;
-        margin: 50px auto;
-        grid-gap: 15px;
-    }
-    
-    .latest-movies img, .content__top-10-movies img {
-        width:100%;
-        height:200px;
-    }
-
     .content__latest-movies p, .content__top-10-movies p {
         display: none;
     }
-    
+
     .img_weekly-producer {
         padding: 10px 40px 0 0;
     }
@@ -393,17 +390,18 @@ p {
         font-size: 15px;
     }
 
-    .latest-movies {
-        display: grid;
-        grid-template-columns: repeat(5, 0.5fr);
-        max-width: 1500px;
-        margin: 50px auto;
-        grid-gap: 15px;
+    .latest-movies, .top-10-movies {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px;
+        grid-gap: 10px;
+    }
+
+    .h1-220px {
+        grid-column: 1/1;
     }
     
     .latest-movies img, .content__top-10-movies img {
-        width:100%;
-        height:200px;
+       min-height: 400px;
     }
 
     .content__latest-movies p, .content__top-10-movies p {
