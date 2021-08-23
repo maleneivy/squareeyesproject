@@ -761,7 +761,7 @@ p {
 .contact-us i{
     margin-right: 20px
 }
-/*browse movies page pad size*/
+/*browse movies page mobile size*/
 .br-movies_genre{
     grid-row: 2;
 }
@@ -777,17 +777,20 @@ p {
 .browse-movies_container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 0.3fr);
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .browse-movies_container h2 {
-    font-size: 28px;
+    font-size: 24px;
 }
 .browse-movies_container h1 {
-    font-size: 32px;
+    font-size: 28px;
 }
 .br-movies_genre, .br-movies_coninent, .br-movies_year, .br-movies_title-groups {
     margin: 0 5px 80px 10px;
 }
-.cta-browse {
-    font-size: 25px;
+.br-movies_heading {
+    margin-top: 40px;
 }
+
 }
