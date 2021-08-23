@@ -528,7 +528,24 @@ p {
     font-family:"skolar-sans-latin";
     text-transform: uppercase;
 }
-
+/*browse movies page pad size*/
+.br-movies_year, .br-movies_title-groups {
+    grid-row: 3;
+    margin-top: 20px;
+}
+.browse-movies_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.3fr);
+}
+.browse-movies_container h2 {
+    font-size: 28px;
+}
+.browse-movies_container h1 {
+    font-size: 32px;
+}
+.br-movies_genre, .br-movies_coninent, .br-movies_year, .br-movies_title-groups {
+    margin: 0 5px 20px 10px;
+}
 }
 
 /*media mobile styles*/
@@ -743,5 +760,34 @@ p {
 }
 .contact-us i{
     margin-right: 20px
+}
+/*browse movies page pad size*/
+.br-movies_genre{
+    grid-row: 2;
+}
+.br-movies_coninent {
+    grid-row: 3;
+}
+.br-movies_year {
+    grid-row: 4;
+}
+.br-movies_title-groups {
+    grid-row: 5;
+}
+.browse-movies_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 0.3fr);
+}
+.browse-movies_container h2 {
+    font-size: 28px;
+}
+.browse-movies_container h1 {
+    font-size: 32px;
+}
+.br-movies_genre, .br-movies_coninent, .br-movies_year, .br-movies_title-groups {
+    margin: 0 5px 80px 10px;
+}
+.cta-browse {
+    font-size: 25px;
 }
 }
