@@ -366,7 +366,6 @@ p {
 
 }
 .section__log-in input, .section__log-in label {
-    min-width: 300px;
     font-size: 15px;
     font-family: skolar sans latin;
 }
@@ -383,6 +382,11 @@ p {
 }
 .section__log-in a:hover {
     color:#05032c;
+}
+/*sign-up page*/
+.log-in div {
+    margin:0;
+    min-width: 20px;
 }
 
 /*media tablet styles*/
@@ -583,6 +587,7 @@ p {
 .br-movies_genre, .br-movies_coninent, .br-movies_year, .br-movies_title-groups {
     margin: 0 5px 20px 10px;
 }
+
 }
 
 /*media mobile styles*/
@@ -843,4 +848,10 @@ p {
     min-width: 100px;
     font-size: 15px;
 }
+/*sign up mobile*/
+.log-in div {
+    font-size: 10px;
+}
+.i-accept-checkbox{
+    font-size: 30px;
 }
