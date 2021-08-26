@@ -336,6 +336,7 @@ p {
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 200px;
 }
 .browse-movies_container h2{
     font-size: 36px;
@@ -387,6 +388,85 @@ p {
 .log-in div {
     margin:0;
     min-width: 20px;
+}
+/*my account page with a tabmenu*/
+.tabmenu{
+    color:#05032c;
+    font-family: 'skolar sans latin', sans-serif;
+    display:flex;
+    flex-direction: column;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: auto;
+    align-content: center;
+    margin-top: 150px;
+    margin-bottom: 200px;;
+}
+.tab {
+    display: flex;
+    background-color: #adadd8cc;
+    min-width: 1200px;
+    padding: 30px;
+    display: none;
+}
+.tabmenu i{
+    color:#FFF;
+    font-size: 50px;
+    float: right;
+
+}
+.tab i{
+    font-size: 100px;
+    font-weight: thin;
+    float: left;
+}
+
+.my-movies {
+    background-color: rgba(34,33,74,0.8);
+    margin: 10px 20px;
+}
+.my-movies img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.my-movies h2 {
+    font-size: 28px;
+}
+.my-movies p{
+    font-size: 18px;
+}
+.tabcolor {
+    background-color: #00A2BB;
+    padding: 10px;
+    
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.tab label, .tab input {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.fill-information {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    padding: 40px;
+}
+.edit-prof-pic {
+    align-items: center;
+}
+.tabmenu input[type='radio'] {
+    display: none;
+}
+.tabmenu input[type='radio']:checked +label+ .tab {
+    display:inherit;
+}
+.tabmenu input[type='radio']:checked + label {
+    background-color: #adadd8cc;
+    color: #FFF;
 }
 
 /*media tablet styles*/
@@ -586,6 +666,35 @@ p {
 }
 .br-movies_genre, .br-movies_coninent, .br-movies_year, .br-movies_title-groups {
     margin: 0 5px 20px 10px;
+}
+/*my account page with a tabmenu pad-pize*/
+.tabmenu {
+    align-content:center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;;
+}
+.tabmenu, .tab{
+    max-width: 800px;
+}
+.tab {
+    flex-direction: column;
+    align-items: center;
+    min-width: 800px;
+}
+.fill-information, .edit-prof-pic {
+    max-width: 700px;
+}
+.fill-information input {
+    max-width: 500px;
+}
+
+.tab img {
+    width: 350px;
+    height: 200px;
+}
+.my-movies {
+    max-width: 350px;
 }
 
 }
@@ -852,4 +961,40 @@ p {
 .log-in div {
     font-size: 10px;
 }
+/*my account page with a tabmenu mobile-pize*/
+.tab {
+    min-width: 200px;
+    align-items: center;
+}
+.tabmenu {
+    align-content:center;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 200px;
+    margin-bottom: 100px;
+}
+.tab {
+    flex-direction: column;
+}
+.tab label{
+    font-size: 14px;
+}
+.tab input, .tab label{
+    max-width: 180px;
+}
+.tab img{
+    height: 200px;
+}
+.tab h2 {
+    font-size: 20px;;
+}
+.tab p {
+    font-size: 18px;
+}
+.fill-information, .edit-prof-pic {
+    max-width: 200px;
+    padding: 10px;
+}
+
+
 }

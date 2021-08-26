@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch independent movies from around the world" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/lhh4xyr.css">
+    <title>Square Eyes Homepage</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="icons/square-eyes-logo.png" alt="Square Eyes Brand Logo" class="logo">
+        </a>
+        <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <section class="header-menus">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="my-account.html" class="current home-nav">My Account</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                </ul>
+            </section>
+            <section class="search">
+                <input class="search-bar" type="search" id="site-search" name="search"
+                    aria-label="Search through site content">
+                <input type="submit" value="search">
+            </section>
+
+        </nav>
+    </header>
+    <main>
+        <section class="tabmenu">
+            <input type="radio" id="tabaccount" name="tabmenu" checked="checked">
+            <label for="tabaccount" class="tabcolor">My Account</label>
+            <div class="tab">
+                <div class="fill-information edit-prof-pic">
+                    <i class="far fa-user-circle"></i>
+                    <p>Edit profile picture</p>
+                    <a href="index.html" class="cta">SIGN OFF</a>
+                </div>
+                <div class="fill-information">
+                    <label for="fullname">NAME</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                    <label for="birthdate">BORN</label>
+                    <input type="date" id="birthdate" name="date">
+                    <label for="country">COUNTRY</label>
+                    <input type="text" id="country" name="country">
+                </div>
+                <div class="fill-information">
+                    <label for="details">EDIT DETAILS ABOUT YOU</label>
+                    <textarea id="details" name="message" rows="10" cols="40"></textarea>
+                    <a href="my-account.html" class="cta">send</a>
+                </div>
+            </div>
+            <input type="radio" id="tabrating" name="tabmenu">
+            <label for="tabrating" class="tabcolor">My Ratings</label>
+            <div class="tab">
+                <section class="my-movies">
+                    <img src="images/Latest movies/american-soldier-with-his-loving-wife-standing-dry-grassy-field.jpg"
+                        alt="picture of woman holding a soldiers arm">
+                    <h2>Film Title (Year)</h2>
+                    <p>Name of the producer</p>
+                    <p>stars</p>
+                    <p>???? Ratings</p>
+                    <a href="#">Learn More</a>
+                </section>
+                <section class="my-movies">
+                    <img src="images/Latest movies/woman-from-with-yellow-scarf-covering-her-head-without-hair-contemplating-sea-horizon.jpg"
+                        alt="picture of a woman looking towards the blue ocean">
+                    <h2>Film Title (Year)</h2>
+                    <p>Name of the producer</p>
+                    <p>stars</p>
+                    <p>???? Ratings</p>
+                    <a href="#">Learn More</a>
+                </section>
+            </div>
+
+
+            <input type="radio" id="tabmovies" name="tabmenu">
+            <label for="tabmovies" class="tabcolor">My Movies</label>
+
+            <div class="tab">
+                <section class="my-movies">
+                    <img src="images/Latest movies/whitetail-deer-standing-in-autumn-wood.jpg"
+                        alt="picture of a deer surrounded by yellow flowers">
+                    <h2>Film Title (Year)</h2>
+                    <p>Name of the producer</p>
+                    <p>stars</p>
+                    <p>???? Ratings</p>
+                    <a href="#">Learn More</a>
+                </section>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <section>
+            <div>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
