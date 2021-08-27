@@ -468,7 +468,37 @@ p {
     background-color: #adadd8cc;
     color: #FFF;
 }
-
+/*About the movie page*/
+.about-the-movie-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 100px 300px 300px 300px;
+}
+.about-the-movie-container i {
+    color: #FFF;
+    font-size: 50px;
+    float: right;
+}
+.movie-poster-about-the-movie {
+    background-color: #FFF;
+    height: 400px;
+    width: 100%;
+}
+.box1-about-the-movie, .box2-about-the-movie {
+    background-color: #22214ACC;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.box1-about-the-movie a {
+    width: 50px;
+}
+.about-the-movie-back {
+    color: #FFF;
+    font-size: 50px;
+}
 /*media tablet styles*/
 @media only screen and (min-width:1368px) {
     #hamburger-menu, header label {
@@ -696,6 +726,12 @@ p {
 .my-movies {
     max-width: 350px;
 }
+/*About the movie page pad size*/
+.about-the-movie-container {
+    max-width: 100%;
+    margin: 50px 100px 200px 100px;
+}
+
 
 }
 
@@ -995,6 +1031,17 @@ p {
     max-width: 200px;
     padding: 10px;
 }
-
+/*About the movie page mobile size*/
+.about-the-movie-container {
+    max-width: 100%;
+    margin: 10px;
+}
+.movie-poster-about-the-movie {
+    height: 200px;
+}
+.box1-about-the-movie a {
+   width: 50%;
+   font-size: 12px;;
+}
 
 }
