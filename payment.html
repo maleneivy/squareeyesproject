@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch independent movies from around the world" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/lhh4xyr.css">
+    <title>Square Eyes Homepage</title>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="icons/square-eyes-logo.png" alt="Square Eyes Brand Logo" class="logo">
+        </a>
+        <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav>
+            <section class="header-menus">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                </ul>
+            </section>
+            <section class="search">
+                <input class="search-bar" type="search" id="site-search" name="search"
+                    aria-label="Search through site content">
+                <input type="submit" value="search">
+            </section>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="pay-for-movie">
+            <form>
+                <i class="far fa-window-close" value="Go back!" onclick="history.back()"></i>
+            </form>
+            <div class="pay-container">
+                <h1>Confirm purchase</h1>
+                <form method="POST">
+                    <h2>Please fill in the forms</h2>
+                    <div class="input-payment-groups">
+                        <input type="text" placeholder="Cards Owner" required class="name">
+                        <div class="input-payment-groups">
+                            <div>
+                                <input type="tel" placeholder="Card Number" required class="name">
+                            </div>
+                        </div>
+
+                        <div class="input-payment-groups">
+                            <div>
+                                <input type="tel" placeholder="CVC" required class="name">
+                            </div>
+
+                            <div class="input-payment-groups">
+                                <select>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <select>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                </select>
+
+                                <a href="watchmovie,html" class="cta cta-big">pay</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <section>
+                <div>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

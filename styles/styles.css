@@ -499,6 +499,39 @@ p {
     color: #FFF;
     font-size: 50px;
 }
+/*payment site*/
+.pay-for-movie i {
+    color: #fff;
+    margin-top: 200px;
+    font-size: 50px;
+    float: right;;
+}
+.pay-for-movie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin:auto;
+    justify-content: center;
+}
+.pay-container {
+    background-color: #22214ACC;
+    color: #fff;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 9px;
+}
+
+.pay-container input, .pay-container select {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 9px;;
+}
+
 /*media tablet styles*/
 @media only screen and (min-width:1368px) {
     #hamburger-menu, header label {
@@ -731,7 +764,14 @@ p {
     max-width: 100%;
     margin: 50px 100px 200px 100px;
 }
+/*payment site- pad size*/
+.pay-for-movie {
+    max-width: 500px;
 
+}
+.pay-container {
+    max-width: 500px;
+}
 
 }
 
@@ -1043,5 +1083,24 @@ p {
    width: 50%;
    font-size: 12px;;
 }
+/*payment site- mobile size*/
+.pay-for-movie {
+    max-width: 300px;
+    margin-bottom: 70px;
+}
+.pay-for-movie i {
+    font-size: 30px;
+    margin-top: 50px
+}
+.pay-container input, .pay-container a, .pay-container select {
+    font-size: 14px;
+}
 
+.pay-container {
+    max-width: 300px;
+}
+.pay-container a {
+    display: block;
+    margin-top: 30px;
+}
 }
