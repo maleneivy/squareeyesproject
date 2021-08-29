@@ -386,6 +386,9 @@ p {
     margin:0;
     min-width: 20px;
 }
+.section__log-in {
+    margin-bottom: 200px;
+}
 /*my account page with a tabmenu*/
 .tabmenu{
     color:#05032c;
