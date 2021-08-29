@@ -144,8 +144,7 @@ p {
     
 }
 
-
-.latest-movies {
+.latest-movies, .top-10-movies {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     max-width: 1500px;
@@ -161,7 +160,7 @@ p {
     
 }
 
-.content__latest-movies {
+.content__latest-movies, .content__top-10-movies {
     background-color: rgba(34,33,74,0.8);
     border-radius: 7px;
     padding-bottom: 20px;
@@ -172,7 +171,7 @@ p {
 }
 
 /*Here I should add a class of this a, f.ex class=small-links*/
-.latest-movies a, .top-10-movies a, .weekly__content a {
+.latest-movies a, .top-10-movies a, .weekly__content a{
     font-family: "skolar-latin";
     font-style: italic;
     font-size: 20px;
@@ -186,20 +185,6 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-}
-
-.top-10-movies {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 1500px;
-    margin: 50px auto;
-    grid-gap: 15px;
-}
-
-.content__top-10-movies {
-    background-color: rgba(34,33,74,0.8);
-    border-radius: 7px;
-    padding-bottom: 20px;
 }
 
 .weekly__content {
@@ -530,6 +515,20 @@ p {
     padding: 10px;
     margin: 10px;
     border-radius: 9px;;
+}
+/*About the producer*/
+.about-producer_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1500px;
+    margin: 50px auto;
+    grid-gap: 15px;
+    padding: 30px;
+    background-color: #22214ACC;
+}
+.about-producer_container img {
+    border-radius: 100%;
+    max-width: 100%;
 }
 
 /*media tablet styles*/
@@ -1103,4 +1102,7 @@ p {
     display: block;
     margin-top: 30px;
 }
+/*About the producer page mobile size*/
+.about-producer_container {
+    grid-template-columns: repeat(1, 1fr);
 }
