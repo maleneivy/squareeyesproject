@@ -397,7 +397,7 @@ p {
     margin: auto;
     align-content: center;
     margin-top: 150px;
-    margin-bottom: 200px;;
+    margin-bottom: 400px;
 }
 .tab {
     display: flex;
@@ -440,6 +440,12 @@ p {
 }
 .my-movies p{
     font-size: 18px;
+}
+.my-movies label{
+    color: #FFF;
+}
+.my-movies textarea {
+    width:200px;
 }
 .tabcolor {
     background-color: #00A2BB;
@@ -774,7 +780,7 @@ p {
     margin-bottom: 200px;;
 }
 .tabmenu, .tab{
-    max-width: 800px;
+    max-width: 500px;
 }
 .tab {
     flex-direction: column;
@@ -1097,7 +1103,7 @@ p {
     align-content:center;
     margin: auto;
     margin-top: 50px;
-    max-width: 200px;
+    max-width: 150px;
     margin-bottom: 100px;
 }
 .tab {
