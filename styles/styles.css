@@ -534,6 +534,7 @@ p {
     flex-direction: column;
     padding: 25px;
     border-radius: 9px;
+    margin-bottom: 200px;
 }
 
 .pay-container input, .pay-container select {
