@@ -8,6 +8,7 @@ body {
     margin: 0;
     min-height: 100vh;
     align-content: center;
+   
     
 }
 
@@ -122,6 +123,16 @@ p {
 .search-bar {
     border-radius: 9px;
     height: 24px;
+}
+.links-to-movies-producers {
+    color: #00A2BB;
+    font-style:oblique;
+    text-decoration: none;
+}
+.links-to-movies-producers:hover{
+    color:#FFF;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 /*Homepage for everyone*/
@@ -405,7 +416,15 @@ p {
     font-weight: thin;
     float: left;
 }
-
+.tabmenu a {
+    color: #00A2BB;
+    text-decoration: none;
+}
+.tabmenu a:hover{
+    color:#fff;
+    text-decoration: underline;
+    font-weight: bolder;
+}
 .my-movies {
     background-color: rgba(34,33,74,0.8);
     margin: 10px 20px;
@@ -530,6 +549,23 @@ p {
     border-radius: 100%;
     max-width: 100%;
 }
+
+/*play movie page*/
+.play-movie-container {
+    background-color: #22214ACC;
+}
+.play-movie-container video {
+    width: 100%;
+    height: 97vh;
+}
+.back-from-movie {
+    background-color: #22214ACC;
+}
+.back-from-movie i{
+    color:#FFF;
+    font-size: 3vh;
+}
+
 
 /*media tablet styles*/
 @media only screen and (min-width:1368px) {
@@ -784,8 +820,12 @@ p {
     header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        font-size: 15px;
+        
     }
-    
+    header a, header label {
+        height: 70px;
+    }
     #hamburger-menu, nav {
         display: none;
     }
@@ -836,17 +876,14 @@ p {
     }
 
     h1{
-        font-size: 28px;
-    }
-
-    h2 {
         font-size: 20px;
     }
 
-    .cta-big {
-        min-width: 100px;
-        min-height: 20px;
-        font-size: 15px;
+    h2 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
     }
 
     .latest-movies, .top-10-movies {
@@ -858,7 +895,11 @@ p {
     .h1-220px {
         grid-column: 1/1;
     }
-    
+    .latest-movies {
+        margin: 30px 5px 50px 5px;
+        padding: 10px;
+    }
+
     .latest-movies img, .content__top-10-movies img {
        min-height: 400px;
     }
@@ -866,24 +907,26 @@ p {
     .content__latest-movies p, .content__top-10-movies p {
         display: none;
     }
+    .welcome_buttons a {
+        margin: 5px;
+    }
+    .welcome__banner h1, .welcome__banner p{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
     .explore-now__banner {
         flex-direction: column;
         padding-bottom: 25px;
     }
-
-    .explore-now__banner h1 {
-        font-size: 28px;
-    }
-
-    .explore-now__banner h2 {
-        font-size: 20px;
-    }
-
     .cta-big {
-        min-width: 50px;
+        min-width: 30px;
         min-height: 10px;
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .cta {
+        min-width: 20px;
+        font-size: 12px;
     }
     
     .img_weekly-producer {
@@ -903,7 +946,7 @@ p {
     footer {
         font-size: 0.5em;
     }
-        /*About us page*/
+        /*About us page mobile size */
 .about-us {
     display: flex;
     flex-wrap: wrap;
@@ -911,20 +954,23 @@ p {
 }
 
 .about-us h1 {
-    margin-top: 150px;
-    margin-left: 70px;
+    margin-top: 50px;
+    margin-left: 30px;
 }
 
 .section__about-us-text {
-    margin: 0px 100px 50px 75px;
-    padding: 10px 100px 100px 10px;
+    margin: 0px 30px 50px 30px;
+    padding: 10px;
 }
 
 .about-us i {
-    font-size: 40px;
-    margin-right: 100px;
+    font-size: 30px;
+    margin-right: 30px;
 }
 /*contact us mobile size*/
+.contact-us h1{
+    margin-top: 50px;
+}
 .section__contact-us-content {
     padding-right: 10px;
     padding-left: 10px;
@@ -967,8 +1013,7 @@ p {
     order: 6;
 }
 .get-in-touch__container input {
-    font-size: 30px;
-    align-content: stretch;
+    font-size: 20px;
 }
 .get-item6 input {
     background-color: #fea850;
@@ -981,11 +1026,12 @@ p {
     text-transform: uppercase;
 }
 .get-item6 textarea {
-    max-width: 300px;
+    max-width: 220px;
     min-height: 00px;
 }
 .contact-us i{
-    margin-right: 20px
+    margin-right: 20px;
+    font-size: 30px;;
 }
 /*browse movies page mobile size*/
 .br-movies_genre{
@@ -1018,6 +1064,11 @@ p {
 .br-movies_heading {
     margin-top: 40px;
 }
+.top-10-movies{
+    margin: 30px 5px 50px 5px;
+    padding: 10px;
+}
+
 /*log-in mobile*/
 .log-in i{
     margin-top: 50px;
@@ -1075,11 +1126,14 @@ p {
     max-width: 100%;
     margin: 10px;
 }
+.about-the-movie-container i{
+    font-size: 30px;
+}
 .movie-poster-about-the-movie {
     height: 200px;
 }
 .box1-about-the-movie a {
-   width: 50%;
+   width: 100px;
    font-size: 12px;;
 }
 /*payment site- mobile size*/
@@ -1105,4 +1159,5 @@ p {
 /*About the producer page mobile size*/
 .about-producer_container {
     grid-template-columns: repeat(1, 1fr);
+}
 }
