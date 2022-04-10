@@ -683,6 +683,10 @@ p {
         display: none;
     }
 
+    .weekly__content {
+        margin: 100px 50px;
+    }
+
     /*About us page*/
 .about-us {
     display: flex;
@@ -696,7 +700,7 @@ p {
 }
 
 .section__about-us-text {
-    margin: 0px 200px 50px 100px;
+    margin: 0px 200px 200px 100px;
     padding: 10px 200px 200px 10px;
 }
 
