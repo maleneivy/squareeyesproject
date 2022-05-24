@@ -1,0 +1,9 @@
+.input-error {
+    display: none;
+    color: rgb(252, 98, 98);
+}
+
+.successMessage {
+    color: green;
+    display: none;
+}

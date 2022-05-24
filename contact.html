@@ -64,40 +64,46 @@
                 <div class="type-of-contact">
                     <h2>Type of contact</h2>
                     <div>
-                        <input type="checkbox" name="film-producer" value="film-producer" id="film-producer"><label
+                        <input type="radio" name="radio" value="film-producer" id="film-producer"><label
                             for="film-producer">Film Producer</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="film-watcher" value="film-watcher" id="film-watcher"><label
+                        <input type="radio" name="radio" value="film-watcher" id="film-watcher"><label
                             for="film-watcher">Film Watcher</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="film-enthusiast" value="film-enthusiast"
-                            id="film-enthusiast"><label for="film-enthusiast">Film Enthusiast</label>
+                        <input type="radio" name="radio" value="film-enthusiast" id="film-enthusiast"><label
+                            for="film-enthusiast">Film Enthusiast</label>
                     </div>
 
                 </div>
-                <section class="get-in-touch__container">
+                <form class="get-in-touch__container" id="contactForm">
                     <div class="get-item1">
                         <h2>Get in touch</h2>
                     </div>
                     <div class="get-item2">
-                        <label>First Name</label><input type="text" name="firstname">
+                        <label>First Name</label><input type="text" id="firstName" name="firstname">
+                        <div class="input-error" id="firstNameError">Please enter your first name</div>
                     </div>
                     <div class="get-item3">
-                        <label>Last Name</label><input type="text" name="lastname">
-                    </div>
-                    <div class="get-item4">
-                        <label>Company</label><input type="text" name="company">
+                        <label>Last Name</label><input type="text" id="lastName" name="lastname">
+                        <div class="input-error" id="lastNameError">Please enter your last name</div>
                     </div>
                     <div class="get-item5">
-                        <label>E-mail</label><input type="text" name="email">
+                        <label>E-mail</label><input type="text" id="email" name="email">
+                        <div class="input-error" id="emailError">Please enter a valid email address</div>
                     </div>
                     <div class="get-item6">
-                        <label>Message</label><textarea id="message" name="message" rows="10" cols="60"></textarea>
-                        <input type="submit" value="Send">
+                        <label>Message (max. 400 letters)</label><textarea id="message" name="message" rows="10"
+                            cols="60" maxlength="400"></textarea>
+
+                        <input type="submit" value="Send" id="clearSend">
+
+                        <div class="input-error" id="messageError">Please write us a message</div>
+                        <div class="successMessage" id="successMessage">Thank you for your message. We will get beck to
+                            you as soon as we can!</div>
                     </div>
-                </section>
+                </form>
             </section>
         </section>
 
@@ -114,6 +120,8 @@
             </div>
         </section>
     </footer>
+
+    <script src="script/contact.js"></script>
 
 </body>
 
