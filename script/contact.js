@@ -61,17 +61,23 @@ function validateForm() {
 
     if (isFormValid) {
         // Do something.
-        firstName.value = "";
-        lastName.value = "";
-        email.value = "";
-        message.value = "";
-        success.style.display = "block";
+        setTimeout(() => {
+            firstName.value = "";
+            lastName.value = "";
+            email.value = "";
+            message.value = "";
+            success.style.display = "block";
+        }, 1100);
+
+
+        setTimeout(() => {
+            success.style.display = "none";
+        }, 10000);
+
     }
 }
 
 form.addEventListener("submit", validateForm);
-
-
 
 function validateEmail(email) {
     const mailForm = /\S+@\S+\.\S+/; // checking structure of valid email REGEX
