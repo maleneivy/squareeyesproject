@@ -77,12 +77,8 @@
                         <h2>Get in touch</h2>
                     </div>
                     <div class="get-item2">
-                        <input type="text" id="firstName" name="firstname" placeholder="First name">
-                        <div class="input-error" id="firstNameError">Please enter your first name</div>
-                    </div>
-                    <div class="get-item3">
-                        <input type="text" id="lastName" name="lastname" placeholder="Last name">
-                        <div class="input-error" id="lastNameError">Please enter your last name</div>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <div class="input-error" id="nameError">Please enter your first name</div>
                     </div>
                     <div class="get-item5">
                         <input type="text" id="email" name="email" placeholder="Email">
@@ -92,12 +88,17 @@
                         <textarea id="message" name="message" rows="10" cols="60" maxlength="400"
                             placeholder="Enter your message here (max.400 letters)"></textarea>
 
-                        <input type="submit" value="Send" id="clearSend">
+                        <div class="contact-cta-feedback">
+                            <input type="submit" value="Send">
 
-                        <div class="input-error" id="messageError">Please write us a message</div>
-                        <div class="successMessage" id="successMessage">Thank you for your message. We will get back to
-                            you as soon as we can!</div>
+                            <div class="input-error" id="messageError">Please write us a message</div>
+                            <div class="successMessage" id="successMessage">Thank you for your message. We will get back
+                                to
+                                you as soon as we can!</div>
+                        </div>
                     </div>
+
+
                 </form>
             </section>
         </section>
@@ -116,7 +117,7 @@
         </section>
     </footer>
 
-    <script src="script/contact.js"></script>
+    <script src="script/input.js"></script>
 
 </body>
 
