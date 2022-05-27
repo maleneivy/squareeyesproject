@@ -1,4 +1,4 @@
-const form = document.querySelector("#contactForm"); //pick the form by its id
+const form = document.querySelector("#contactForm");
 const name = document.querySelector("#name");
 const inputError = document.querySelector(".input-error");
 const nameError = document.querySelector("#nameError");
@@ -10,7 +10,7 @@ const success = document.querySelector("#successMessage");
 
 
 
-function checkLength(value, minimumLength) { //a function I can reuse rather then repeating the code I need to check the length. 
+function checkLength(value, minimumLength) {
     if (value.trim().length >= minimumLength) {
         return true;
     }
@@ -20,11 +20,11 @@ function checkLength(value, minimumLength) { //a function I can reuse rather the
 }
 
 function validateForm() {
-    event.preventDefault(); //preventing the default behaviour of the form, and we can access the input values on the form. (prevents the form to autosubmitting )
+    event.preventDefault();
 
     var isFormValid = true;
 
-    if (checkLength(name.value, 1) === true) { //checking length of firstname, (don't need the === but it's better for reading the code.) 
+    if (checkLength(name.value, 1) === true) {
         nameError.style.display = "none";
     }
     else {
@@ -32,7 +32,7 @@ function validateForm() {
         isFormValid = false;
     }
 
-    if (validateEmail(email.value) === true) { // checking valid email.
+    if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
     }
     else {
@@ -67,7 +67,7 @@ function validateForm() {
 form.addEventListener("submit", validateForm);
 
 function validateEmail(email) {
-    const mailForm = /\S+@\S+\.\S+/; // checking structure of valid email REGEX
+    const mailForm = /\S+@\S+\.\S+/;
     const emailMatch = mailForm.test(email);
     return emailMatch;
 };

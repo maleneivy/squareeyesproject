@@ -56,14 +56,22 @@
                     <i class="far fa-window-close" value="Go back!" onclick="history.back()"></i>
                 </form>
             </div>
-            <div class="section__log-in">
+            <form class="section__log-in" id="logInForm" name="form" action="/my-account.html"
+                onsubmit="logInValidated()">
                 <h2>LOG IN</h2>
-                <label>Email Adress</label><input type="email" name="email" id="email">
-                <label>Password</label><input type="password" name="password" id="password">
-                <a href="my-account.html" class="cta cta-big cta-with-top-margin" id="clearSend">LOG IN</a>
+
+                <label>Email</label><input type="email" name="email" id="email">
+                <div class="input-error" id="emailError">Please enter a valid email address</div>
+
+                <label>Password (at least 6 letters)</label><input type="password" name="password" id="password1">
+                <div class="input-error" id="password1Error">Wrong password, try again.</div>
+
+
+                <input type="submit" value="log in" class="cta cta-big cta-with-top-margin">
+
                 <a href="forgot-password.html">Forgot your password?</a>
                 <a href="sign-up.html">Don't have an account?</a>
-            </div>
+            </form>
 
         </section>
 
@@ -81,7 +89,6 @@
     </footer>
 
     <script src="script/log-in.js"></script>
-    <script src="script/input.js"></script>
 </body>
 
 </html>
