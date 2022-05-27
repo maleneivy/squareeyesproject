@@ -56,21 +56,27 @@
                     <i class="far fa-window-close" value="Go back!" onclick="history.back()"></i>
                 </form>
             </div>
-            <div class="section__log-in">
+            <form class="section__log-in" id="signInForm" action="/my-account.html" onsubmit="signUpValidated()">
                 <h2>SIGN UP</h2>
-                <label>Email Adress</label><input type="email" name="email">
-                <label>Password</label><input type="password" name="password">
-                <label>Confirm password</label><input type="password" name="password">
+                <label>Email Adress</label><input type="email" name="email" id="email">
+                <div class="input-error" id="emailError">Please enter a valid e-mail adress</div>
+
+                <label>Password</label><input type="password" name="signUpPassword" id="signUpPassword">
+                <div class="input-error" id="signUpPasswordError">Password must have at least 6 letters</div>
+
+                <label>Confirm password</label><input type="password" name="confirmPassword" id="confirmPassword">
+                <div class="input-error" id="confirmPasswordError">The passwords does not match</div>
 
                 <div>
-                    <input type="checkbox"><a href="privacy.html">I accept Square Eyes privacy
+                    <input type="checkbox" id="privacyChecked"><a href="privacy.html">I accept Square Eyes privacy
                         policy</a>
                 </div>
+                <div class="input-error" id="privacyError">You need to accept our privay policy</div>
                 <div>
                     <input type="checkbox"><label>I want newsletters!</label>
                 </div>
-                <a href="my-account.html" class="cta cta-big cta-with-top-margin">sign up</a>
-            </div>
+                <input type="submit" value="sign up" class="cta cta-big cta-with-top-margin">
+            </form>
 
         </section>
 
@@ -86,6 +92,7 @@
             </div>
         </section>
     </footer>
+    <script src="script/sign-up.js"></script>
 </body>
 
 </html>
