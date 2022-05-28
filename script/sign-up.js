@@ -19,8 +19,8 @@ function signUpValidated() {
         formIsValid = false;
     }
 
-    if (signUpPassword.value.length <= 6) {
-        signUpPassword.style.display = "none";
+    if (signUpPassword.value.length >= 6) {
+        signUpPasswordError.style.display = "none";
     } else {
         signUpPasswordError.style.display = "block";
         formIsValid = false;

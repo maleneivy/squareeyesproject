@@ -56,46 +56,59 @@
             </form>
             <div class="pay-container">
                 <h1>Confirm purchase</h1>
-                <form method="POST">
+                <form id="paymentForm" action="play-movie.html" onsubmit="validateForm()">
                     <h2>Please fill in the forms</h2>
-                    <div class="input-payment-groups">
-                        <input type="text" placeholder="Cards Owner" required class="name">
-                        <div class="input-payment-groups">
-                            <div>
-                                <input type="tel" placeholder="Card Number" required class="name">
-                            </div>
-                        </div>
 
-                        <div class="input-payment-groups">
-                            <div>
-                                <input type="tel" placeholder="CVC" required class="name">
-                            </div>
 
-                            <div class="input-payment-groups">
-                                <select>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                    <option>05</option>
-                                    <option>06</option>
-                                    <option>07</option>
-                                    <option>08</option>
-                                    <option>09</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                </select>
-                                <select>
-                                    <option>2021</option>
-                                    <option>2022</option>
-                                    <option>2023</option>
-                                </select>
+                    <input type="text" autocomplete="off" placeholder="Card Holder" name="fullName" id="fullName">
+                    <div class="input-error" id="fullNameError">Please enter name of card holder</div>
 
-                                <a href="play-movie.html" class="cta cta-big">pay</a>
-                            </div>
-                        </div>
+
+                    <div>
+                        <input type="text" autocomplete="off" placeholder="Card Number (16 digits)" name="cardNumber"
+                            id="cardNumber">
+
+                        <div class="input-error" id="cardNumberError">Please enter a valid card number</div>
                     </div>
+
+
+                    <div>
+                        <input type="text" placeholder="CVC (3 digits)" id="cvc">
+                        <div class="input-error" id="cvcError">Please enter a valid CVC.</div>
+                    </div>
+                    <div>
+                        <select id="expirationMonth">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+
+                        <select id="expirationYear">
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="pay" class="cta cta-big cta-with-top-margin">
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -110,6 +123,7 @@
                 </div>
             </section>
         </footer>
+        <script src="script/payment.js"></script>
     </main>
 </body>
 
