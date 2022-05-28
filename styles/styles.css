@@ -177,7 +177,7 @@ p {
     max-width: 1500px;
     margin: 50px auto;
     grid-gap: 15px;
-    padding: 30px;
+    padding: 30px 70px;
 }
 
 .latest-movies img,
@@ -236,6 +236,7 @@ a {
     background-color: rgba(34, 33, 74, 0.8);
     max-width: 1500px;
     margin: 100px auto;
+    padding: 30px 70px 60px 70px;
 }
 
 .weekly__content img {
