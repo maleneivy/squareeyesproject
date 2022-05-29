@@ -416,7 +416,7 @@ a {
     margin-bottom: 10px;
 }
 
-.section__log-in h1 {
+.section__log-in h2 {
     color: #05032c;
 }
 
@@ -1238,10 +1238,6 @@ a {
     }
 
     /*log-in mobile*/
-    .log-in i {
-        margin-top: 50px;
-        font-size: 30px;
-    }
 
     .section__log-in {
         padding: 10px 80px 20px 10px;
