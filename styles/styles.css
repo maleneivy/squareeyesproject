@@ -408,7 +408,7 @@ a {
 
 .section__log-in input,
 .section__log-in label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: skolar sans latin;
 }
 
@@ -416,14 +416,16 @@ a {
     margin-bottom: 10px;
 }
 
-.section__log-in h2 {
+.section__log-in h1 {
     color: #05032c;
 }
 
 .section__log-in a {
-    color: #00A2BB;
+    color: #016777;
     text-decoration: none;
     margin-bottom: 10px;
+    font-size: 1.3rem;
+
 }
 
 .section__log-in a:hover {
