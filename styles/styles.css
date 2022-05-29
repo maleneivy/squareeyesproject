@@ -34,6 +34,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 50px;
+
 }
 
 header nav {
@@ -209,7 +211,6 @@ a {
     font-family: "skolar-latin";
     font-style: italic;
     font-size: 1.3rem;
-    text-decoration: none;
     color: #00A2BB;
 }
 
@@ -526,7 +527,6 @@ a {
     font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
-    text-decoration: underline;
 }
 
 .tabcolor:hover {
@@ -560,8 +560,12 @@ a {
 }
 
 .tabmenu input[type='radio']:checked+label {
-    background-color: #adadd8cc;
+    background-color: #1ad3ef;
     color: #FFF;
+}
+
+.tabcolor {
+    border: 0.2px solid rgb(8, 0, 78);
 }
 
 /*About the movie page*/
