@@ -1249,15 +1249,14 @@ a {
         margin-bottom: 50px;
     }
 
-    .section__log-in input,
-    .section__log-in label {
-
-        font-size: 15px;
+    .section__log-in input {
+        font-size: 1rem;
     }
 
     /*sign up mobile*/
-    .log-in div {
-        font-size: 10px;
+
+    .news label {
+        font-family: 1.3rem;
     }
 
     /*my account page with a tabmenu mobile-pize*/
