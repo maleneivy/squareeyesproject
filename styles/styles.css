@@ -264,15 +264,6 @@ a {
     padding: 10px 500px 300px 10px;
 }
 
-.about-us i,
-.contact-us i,
-.log-in i {
-    color: #FFF;
-    font-size: 50px;
-    float: right;
-    margin-right: 200px;
-}
-
 /*contact us page*/
 .section__contact-us-content {
     background-color: #22214ACC;
@@ -399,7 +390,9 @@ a {
     width: 100%;
 }
 
-.log-in i {
+.log-in button {
+    font-size: 2rem;
+    float: right;
     margin-right: 0px;
     margin-top: 100px;
 }
@@ -577,9 +570,8 @@ a {
     margin: 100px 300px 300px 300px;
 }
 
-.about-the-movie-container i {
-    color: #FFF;
-    font-size: 50px;
+.about-the-movie-container button {
+    font-size: 2rem;
     float: right;
 }
 
@@ -607,12 +599,11 @@ a {
 }
 
 /*payment site*/
-.pay-for-movie i {
-    color: #fff;
+.pay-for-movie button {
     margin-top: 100px;
     font-size: 50px;
     float: right;
-    ;
+    font-size: 2rem;
 }
 
 .pay-for-movie {
