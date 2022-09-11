@@ -1352,3 +1352,25 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/*Loader*/
+
+.loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #054465;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

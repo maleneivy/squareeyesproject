@@ -11,12 +11,15 @@ const id = params.get("id");
 const movieUrl = "https://squareeyes.maleneivy.com/wp-json/wc/store/products/" + id;
 
 
+
 async function fetchMovie() {
 
     try {
         const response = await fetch(movieUrl);
         const movie = await response.json();
 
+        movieBoxImage.innerHTML = "";
+        movieBoxDescription.innerHTML = "";
         createHtml(movie);
 
     }
