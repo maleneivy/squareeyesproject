@@ -49,7 +49,7 @@ async function insertMovies(movies, tag, sectionTitle, itemClass, htmlContainerQ
             <img src="${movie.images[0].src}">
             <h2>${movie.name}</h2>
             <div>${movie.description}</div>
-            <a href="about-the-movie.html">Learn More</a>
+            <a href="about-the-movie.html?id=${movie.id}">Learn More</a>
         </div>
         `
     });

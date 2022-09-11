@@ -574,10 +574,10 @@ a {
     float: right;
 }
 
-.movie-poster-about-the-movie {
-    background-color: #FFF;
+.movie-poster-about-the-movie img {
     height: 400px;
     width: 100%;
+    object-fit: cover
 }
 
 .box1-about-the-movie,
@@ -1311,7 +1311,7 @@ a {
         font-size: 30px;
     }
 
-    .movie-poster-about-the-movie {
+    .movie-poster-about-the-movie img {
         height: 200px;
     }
 
