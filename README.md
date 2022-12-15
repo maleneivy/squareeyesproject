@@ -1,6 +1,6 @@
 # Square Eyes Movie Site
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](images/readme-image/square-eyes.jpg)
 
 Square Eyes is an independent movie site for both producers and watchers. 
 The target audience for people aged 25-40 and who loves cinemas. 
