@@ -15,4 +15,5 @@ In this project I've worked with UI-design, UX-design and the code.
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/maleneivyolsen/)
+
 [Discord](https://www.discordapp.com/users/2217)
