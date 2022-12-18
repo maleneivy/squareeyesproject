@@ -23,7 +23,7 @@ In this project I've worked with UI-design, UX-design and the code.
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/maleneivy/squareeyesproject.git
 ```
 
 2. Install the dependencies:
